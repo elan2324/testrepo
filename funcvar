@@ -1,0 +1,9 @@
+function test() {
+    var a = 10;
+    if (true) {
+        var a = 20;  // same variable!
+        console.log(a); // 20
+    }
+    console.log(a); // 20 (because var ignores block)
+}
+test();
